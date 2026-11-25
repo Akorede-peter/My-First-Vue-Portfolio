@@ -1,6 +1,6 @@
-<script>
+<script setup>
     import { ref } from 'vue';
-
+    const baseUrl = import.meta.env.BASE_URL
 </script>
 <template>
     <!-- SECTION ONE STARTS FROM HERE -->
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="section_one_img">
-            <img src="/images/Other 07.png" alt="image" />
+            <img :src="`${baseUrl}images/Other 07.png`" alt="image" />
         </div>
     </section>
     <!-- SECTION ONE ENDS HERE -->
@@ -22,17 +22,17 @@
     <section class="section_two">
         <h2>FEATURED ON</h2>
         <div class="section_two_imgs">
-            <img src="/images/image 6.png" alt="Featured 1">
-            <img src="/images/image 5.png" alt="Featured 4">
-            <img src="/images/image 7.png" alt="Featured 2">
-            <img src="/images/image 8.png" alt="Featured 3">
+            <img :src="`${baseUrl}images/image 6.png`" alt="Featured 1">
+            <img :src="`${baseUrl}images/image 5.png`" alt="Featured 4">
+            <img :src="`${baseUrl}images/image 7.png`" alt="Featured 2">
+            <img :src="`${baseUrl}images/image 8.png`" alt="Featured 3">
         </div>
     </section>
     <!-- SECTION TWO ENDS HERE -->
     <!-- SECTION THREE STARTS FROM HERE -->
     <section class="section_three">
         <div>
-            <img src="/images/Other 18.png" alt="image" />
+            <img :src="`${baseUrl}images/Other 18.png`" alt="image" />
         </div>
         <div class="section_three_text">
             <h2>Analytics</h2>
@@ -52,7 +52,7 @@
             <button class="section_three_btn">VIEW OUR PRICING</button>
         </div>
         <div>
-            <img src="/images/Other 17.png" alt="image" />
+            <img :src="`${baseUrl}images/Other 17.png`" alt="image" />
         </div>
         
     </section>
@@ -66,21 +66,21 @@
         <div class="sec_five_flexbox">
             <div class="sec_five_flexboxes">
                 <div>
-                    <img src="/images/Ellipse 3.png" alt="Image">
+                    <img :src="`${baseUrl}images/Ellipse 3.png`" alt="Image">
                 </div>
                 <span>OLIVIA COLE</span>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus cumque animi consequatur aut! Veritatis, sit?</p>
             </div>
             <div class="sec_five_flexboxes">
                 <div>
-                    <img src="/images/Ellipse 4.png" alt="Image">
+                    <img :src="`${baseUrl}images/Ellipse 4.png`" alt="Image">
                 </div>
                 <span>EVEN WHITE</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero blanditiis recusandae voluptate similique.</p>
             </div>
             <div class="sec_five_flexboxes">
                 <div>
-                    <img src="/images/Ellipse 5.png" alt="Image">
+                    <img :src="`${baseUrl}images/Ellipse 5.png`" alt="Image">
                 </div>
                 <span>JOHN MILLER</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor unde laboriosam quidem nobis dicta obcaecati.</p>
